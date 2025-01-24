@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+    overflow: hidden; 
+    position: relative;
+    background-image: url("https://i.pinimg.com/736x/ee/25/0f/ee250f586c98954ad4c106e0537a2c94.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links li {
+    font-size: 1rem;
+}
+.nav-links li a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links li:hover {
+    color: blue;
+    cursor: pointer;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw; 
+    height: 70vh; 
+    margin: 5vh auto;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.container_left {
+    top:10%;
+    left:0%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
+}
+.container_left h1 {
+    position: absolute;
+    top: 10%;
+    left:15%;
+    font-size: 3rem;
+    color: #333;
+    line-height: 1.2;
+}
+.container_left p {
+    position: absolute;
+    top:20%;
+    left:2%;
+    width:700px;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    color:black;
+}
+.read {
+    position: absolute;
+    top:50%;
+    padding: 0.75rem 1.5rem;
+    left:5%;
+    background-color: #0073e6;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.read:hover {
+    background-color: #005bb5;
+}
+.container_right {
+    position: absolute;
+    top: 20%;          
+    right: 50px;           
+    width: 300px;       
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;  
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;    
+}
+form h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;    
+}
+.form_grp {
+    margin-bottom: 1rem;
+}
+.form_grp label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;      
+    color: #333;
+}
+input[type="text"],
+input[type="date"] {
+    width: 100%;        
+    padding: 1rem;
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #0073e6;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;        
+}
+button[type="submit"]:hover {
+    background-color: #005bb5;
+}
